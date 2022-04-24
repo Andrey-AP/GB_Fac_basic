@@ -53,7 +53,7 @@ def mk_ch():
 def write_to_file(input_str, file_name):
     if input_str:
         try:
-            with open('file_name', 'a', encoding='UTF-8') as out_file:
+            with open(file_name, 'a', encoding='UTF-8') as out_file:
                 out_file.write(input_str + '\n')
         except IOError:
             print('Cannot access output file')
